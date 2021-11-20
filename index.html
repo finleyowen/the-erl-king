@@ -10,6 +10,7 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="pages.css" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
@@ -17,17 +18,291 @@
 		></script>
 
 		<script>
+			// Advises the user to view the page in landscape mode
+			if (window.innerHeight > window.innerWidth) {
+				alert(
+					'It seems you are viewing the page in portait mode. For the best experience, turn your device to landscape. If this does not work, try turning orientation lock off.'
+				);
+			}
+
+			// Automates scrolling through the webpage
 			function increment() {
-				window.scrollBy(0, window.innerHeight);
+				const currentPage = Math.round(
+					window.scrollY / window.innerHeight
+				);
+				const newPos = (currentPage + 1) * window.innerHeight;
+				window.scrollTo(0, newPos);
 			}
 		</script>
 		<title>The Erl-King</title>
 	</head>
 	<body>
-		<div class="title-page">
-			<p class="display-1">The Erl-King</p>
+		<!-- Title page -->
+		<div class="page title-page" id="page-0">
+			<div class="card" style="padding: 20px">
+				<div class="card-body">
+					<h1 class="display-1">The Erl-King</h1>
+					<i class="text-muted"
+						>A short story by Finley Owen</i
+					>
+					<hr />
+						<h5>Tips for viewing this page</h5>
+						<ul>
+							<li>
+								View in landscape mode, and on the largest screen 
+								you can access.
+							</li>
+							<li>
+								Use full screen if your browser supports it (for
+								Chrome users, click the three dots and then the
+								full screen button next to the Zoom controls).
+							</li>
+							<li>
+								Tap anywhere in the bottom 30% of the screen to
+								move to the next page.
+							</li>
+						</ul>
+					</iframe>
+				</div>
+			</div>
 		</div>
 
+		<div class="row page" id="page-1">
+			<div class="col-md-6">
+				<p>
+					Nicotine-stained yellow light shone through the gaps in the
+					branches above me. The trees were withered and
+					disintegrated, their leaves turned slowly crisp and
+					gradually ran out of moisture until they fell to the dirt
+					floor; stripping the tree &mdash; all the trees &mdash;
+					beyond bare, leaving them more naked than could be imagined
+					mere months ago.
+				</p>
+				<p>
+					I search among my companions, colourful are their bodies and
+					their bright beaks mask almost perfectly their intense distress. 
+					It is autumn, so winter is coming, and our tiny homes
+					provide little protection from cold and wet weather.
+				</p>
+				<p>Erl-King will do you grievous harm.</p>
+				<p>
+					He sits on a log only feet from my cage, stewing fungi and
+					roots and leaves and weeds. He has unnaturally green eyes
+					and knotted brown hair, waist-length and sprinkled with
+					twigs and crackled yellow leaves that cling to him like
+					remora to a whale; like another layer of lies blinding the 
+					unsuspecting to who, <em>what </em>he truly is.
+				</p>
+			</div>
+			<div class="col-md-6 img-container">
+				<img src="assets/img-2.jpg" />
+			</div>
+		</div>
+
+		<div class="row page" id="page-2">
+			<div class="col-md-6 img-container">
+				<img src="assets/img-3.jpg" />
+			</div>
+			<div class="col-md-6">
+				<p>
+					On this occasion, it&rsquo;s a young girl who&rsquo;s found
+					Erl-King&rsquo;s home; she sips a cup of nettle tea
+					and listens to him talk.
+				</p>
+				<p>
+					I say she&rsquo;s less than twenty years old, but
+					Linny disagrees. She has emerald eyes like Erl-King and
+					thick, heavy eyebrows that reach farther over the arc of her
+					eye-line than common.
+				</p>
+				<p>
+					Linny next-door says she&rsquo;s here to save us. She can
+					see in her eyes that she&rsquo;s just as strange a beast as
+					Erl-King; and in the way she looks at us birds that she
+					knows what she&rsquo;s getting into.
+				</p>
+				<p>
+					But no, you think this about every newcomer here. You said
+					the very same thing about the girl who brought the jar of
+					marmalade and the boy who Erl-King scouted from the forest. 
+					Not everyone&rsquo;s here to save us, Linny, that&rsquo;s 
+					just wishful thinking.
+				</p>
+			</div>
+		</div>
+
+		<div class="row page" id="page-3">
+			<div class="col-md-10">
+				<p>
+					I do wonder exactly <em>what</em> she is doing here, though.
+					I mean, she&rsquo;s been coming every day for weeks and
+					neither of the two have made any sort of romantic advance.
+					Normally, Erl-King hooks up with his victims the first time
+					they visit, but this one hasn&rsquo;t gone so far as to give
+					him a hug.
+				</p>
+				<p>
+					They talk about hunting and gathering, where the best
+					chickweed plants are in the forest; they share food and tea
+					and laugh laugh through the afternoon. But why? Is this girl
+					so lonely that he, with his gruff voice and sickening smile, 
+					is her only company? Has she not seen the oddities in Erl-King&rsquo;s
+					appearance? Or &mdash; oh, please, let me shut this thought
+					out! &mdash; are they one and the same?
+				</p>
+			</div>
+		</div>
+
+		<div class="row page" id="page-4">
+			<div class="col-md-6">
+				<p>
+					All the birds remember how our master looked without his
+					clothes on &mdash; it&rsquo;s kind of how we all came to be
+					here. The truth is &mdash; and I don&rsquo;t know how to put
+					this nicely &mdash; he&rsquo;s <em>green</em>. Head to toe,
+					roots to split ends; when he washes the moss and dirt from
+					his body in the river &mdash; taking off his innermost layer
+					of clothing &mdash; his skin, hair, and eyes are a
+					disturbing chlorophyll shade which does not seem at all
+					natural.
+				</p>
+				<p>
+					This young woman does not seem to share Erl-King&rsquo;s
+					skin colour, which one must say is promising. She looks
+					more, well, human. But the more I think about it the more
+					skeptical I am, because I used to look human, too! As did
+					every damned bird in this prison of an enclosure! Just the
+					same, when Erl-King gets his lichen in the right spots
+					around his eyes, positions an exact number of leaves neatly
+					in his hair, and wears his leafy toga,
+					<em>he</em> looks human too.
+				</p>
+			</div>
+			<div class="col-md-6 img-container">
+				<img src="assets/img-5.jpg" />
+			</div>
+		</div>
+
+		<div id="page-5">
+			<div class="row">
+				<div class="col-4">
+					<p>
+						I&rsquo;ve been thinking for a long time about what Linny
+						said the first time she came. Sure, Linny, it&rsquo;s
+						probably just you being your optimistic self, but I do see
+						the difference in the way the two look at each other. 
+					</p>
+				</div>
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4">
+					<p>
+						Maybe you&rsquo;re right after all and she&rsquo;s going to change
+						everything &mdash; at least, I agree that she&rsquo;s
+						different.
+					</p>
+				</div>
+				<div class="col-4"></div>
+			</div>
+
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-4"></div>
+				<div class="col-4">
+					<p>I’m never wrong, you know that; says one bird to another through a wire fence between two cages.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row page" id="page-6">
+			<div class="col-md-3">
+				<img src="assets/img-6.jpg" />
+			</div>
+			<div class="col-md-6">
+				<p>
+					One day, after about four weeks of strange and awkward
+					visits, it happened. Not the way Linny, or I for that
+					matter, thought it would happen, but it happened.
+				</p>
+				<p>
+					It was finally winter, freezing cold. The rain on the forest
+					floor was a symphony of low-frequency instruments, with
+					intricate dynamics and crescendos of percussion and wind.
+					The storm told a wicked story of manipulation, destruction, 
+					and ferocity.
+				</p>
+				<p>
+					The new victim had just been around. She hadn&rsquo;t
+					stopped coming when the wind blew down a tree only metres
+					from Erl-King&rsquo;s spot, nor when the forest floor was
+					covered in snow, so she was here today. When she got up to
+					leave, Linny gave me a look that said &lsquo;oh well, every
+					day&rsquo;s a new opportunity&rsquo;,  and I gave her 
+					one back that said &lsquo;my false sense of hope is entirely
+					your responsibility&rsquo;.
+				</p>
+
+				<p>
+					But I soon realised Linny wasn&rsquo;t even looking at me,
+					but behind me, at the girl walking home.
+				</p>
+			</div>
+			<div class="col-md-3">
+				<img src="assets/img-6.jpg" />
+			</div>
+		</div>
+
+		<div class="row page" id="page-7">
+			<div class="col-md-6">
+				<img src="assets/img-7.jpg" />
+			</div>
+			<div class="col-md-6">
+				<p>
+					I turned around to see what she was looking at, and was
+					instantly baffled. Firstly, she wasn&rsquo;t walking home at
+					all, but instead standing just out of the Erl-King&rsquo;s
+					sight, taking off her clothes. And then, once she had
+					removed every single human garment that she wore, her body
+					became cloaked in fur. Her face elongated, her eyes brightened,
+					her body shrunk, and &mdash; my! &mdash; she was the most
+					majestic creature I&rsquo;ve ever seen!
+				</p>
+				<p>
+					Suddenly, she made perfect sense to me. I mean, such a beautiful
+					wolf made she, of course the human costume was difficult to wear! All the
+					awkwardness and strangeness of her person was absent in this
+					elegant creature before my eyes. Virtue flows from this
+					wolf&rsquo;s every step, and her face was so perfectly geometric
+					it almost made me weep!
+				</p>
+				<p>
+					Erl-King, too, wept when he saw her. But not in the same way as I, he
+					cried and cried and begged her not to eat him alive. She did, which is
+					all the better because had she spared him, he wouldn&rsquo;t have 
+					been so generous in return.
+				</p>
+			</div>
+		</div>
+
+		<hr />
+		<!-- Reflective commentary -->
+		<div class="container" id="page-6">
+			<h1 style="text-align: center;" class="display-1">Reflective commentary</h1>
+			<p>Angela Carter&rsquo;s&nbsp;<em>The Bloody Chamber</em>&nbsp;is a collection of adapted short stories published in 1979, in which fairy tales are reimagined with impressive morbidity and almost unwavering feminism. Themes in her stories include metamorphosis, sexual politics, violence, and death &mdash; a wide range of complicated dynamics which are expressed through surprising and often erotic versions of tales which she, as well as readers of the book, may have been interested in as children.</p>
+<p>Among the reimagines fairy tales are <em>Little Red Riding Hood</em>,<em> Beauty and the Beast</em>,<em> Puss in Boots</em>, and, of course, the Erlking; which is not a single story but a recurrent figure who appears in European mythology and folklore. Traditionally the Erlking was an elf who murdered children in the woods. In <em>The Erl-King</em> (Carter&rsquo;s representation), however, the Erl-King is another, more modern, type of predator; the type with whom women fall in love, upon which he takes advantage of them completely. Once he has successfully seduced them, he does what any sensible entity would do, and turns them into birds.</p>
+<p>Carter&rsquo;s version follows a young woman who almost falls prey to the Erl-King&rsquo;s trap. She is never named, and the only notable characters in the story are her and the Erl-King. It&rsquo;s set in autumn and in a forest, which is important since it retains this feature from the original stories written about the Erlking, including <a href="https://ingeb.org/Lieder/werreite.html">Johann Wolfgang von Goethe&rsquo;s</a>. The conflict in Carter&rsquo;s story is when the protagonist realises the Erl-King&rsquo;s plan, upon spotting a birdcage he weaves for her.</p>
+<p>Interestingly, the story has no clear resolution &ndash; except that the protagonist makes the <em>decision </em>to kill the Erl-King. When I thought about this, I realised that the abrupt ending provided an opportunity for me to extend the scope of the story beyond <em>The Bloody Chamber</em>&rsquo;s representation. Thus, the resolution of my response takes place in winter, and the saviour is a werewolf.</p>
+<p>The last three stories in <em>The Bloody Chamber</em> are about werewolves, all of which are loosely based of <em>Little Red Riding Hood</em> (for obvious reasons). The entity works well with Carteresque writing, since the concept itself is simultaneously metamorphic, violent, sexual (since in all Carter&rsquo;s werewolf stories the character must be fully naked to transform into a wolf), and frankly terrifying. For these reasons, I decided that it was a fitting addition to the story for both the aesthetic, and the plotline.</p>
+<p>Nakedness is also a recurrent theme in <em>The Erl-King </em>as well as many other of the stories in the collection. The following quote example of this theme from the relevant story:
+&lsquo;He strips me to my last nakedness, that underskin of mauve, pearlized satin, like a skinned rabbit; then dresses me again in an embrace so lucid and encompassing it might be made of water.&rsquo;
+Hence, similar comparisons and metaphors are sprinkled throughout my response, in attempt to illuminate Carter&rsquo;s sexual exploration through her writing.</p>
+<p>I had two goals for this story, besides to replicate Carter&rsquo;s style as closely as possible. The first was to humanise the birds and represent them as relatable characters, since it&rsquo;s known in the original story that they <em>were</em> once human, and it&rsquo;s presumed that they will become so again. I attempted this by giving the protagonist a friend, Linny (who is meant to be a common linnet), who is an &lsquo;optimistic self&rsquo;, which is recognised by the main bird-character. Secondly, to create empathy in the reader with what I believe to be a <em>realistic</em> werewolf character, which was attempted by emphasising the &lsquo;awkwardness and strangeness&rsquo; of her in human form.</p>
+<p><strong>Copyright disclaimer: </strong>The cover photo and the wolf drawing are original content, and every other image was sourced from the internet within the Terms and Conditions of the individual websites from which they originated. This story and the assets it includes are for educational and personal usage, and the creator is not profiting from the usage of other people&rsquo;s intellectual property.</p>
+		</div>
 		<div class="next-region" onclick="increment()"></div>
 	</body>
 </html>

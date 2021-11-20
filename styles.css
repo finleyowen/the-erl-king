@@ -3,6 +3,38 @@ div.page {
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+p,
+blockquote {
+	font-family: 'Times New Roman', Times, serif;
+	padding: 0px 20px;
+	text-align: justify;
+}
+
+@media (max-width: 678px) {
+	p,
+	blockquote {
+		font-size: 2.5vw;
+	}
+}
+
+@media (min-width: 678px) {
+	p,
+	blockquote {
+		font-size: 1.5vw;
+	}
+}
+
+img {
+	max-height: 80vh;
+	max-width: 100%;
 }
 
 div.next-region {
@@ -10,14 +42,11 @@ div.next-region {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	top: 80vh;
+	top: 70vh;
 }
 
-div.title-page {
+div.img-container {
 	display: flex;
-	height: 100vh;
-	width: 100vw;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
